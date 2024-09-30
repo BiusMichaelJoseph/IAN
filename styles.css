@@ -16,10 +16,19 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-h1 {
+header h1 {
     margin: 0;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
 }
 
 section {
