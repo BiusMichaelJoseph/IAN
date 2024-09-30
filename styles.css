@@ -31,6 +31,30 @@ header h1 {
     height: auto;
 }
 
+.image-left-content-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-left-content-right img {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-left-content-right .content {
+    width: 55%;
+}
+
 section {
     margin: 20px auto;
     padding: 20px;
@@ -131,7 +155,23 @@ button:hover {
 }
 
 @media (max-width: 768px) {
-    .office {
+    .image-left-content-right {
+        flex-direction: column;
+    }
+
+    .image-left-content-right img, .image-left-content-right .content {
         width: 100%;
+    }
+
+    .image-left-content-right img {
+        margin: 0 0 20px 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
     }
 }
