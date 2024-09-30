@@ -113,6 +113,14 @@ button:hover {
     background-color: #003366;
 }
 
+.responsive-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
     .office {
         width: 100%;
